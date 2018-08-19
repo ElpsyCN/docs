@@ -1,2 +1,3 @@
-# docs
-中二语录
+# Saying
+
+Oracle
