@@ -1,16 +1,14 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /logo.png
 actionText: El Psy Congroo
-actionLink: /
+actionLink: /guide
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: Vue驱动
-  details: 享受 Vue + webpack 的开发体验，在 Markdown 中使用 Vue 组件，同时可以使用 Vue 来开发自定义主题。
-- title: 高性能
-  details: VuePress 为每个页面预渲染生成静态的 HTML，同时在页面被加载的时候，将作为 SPA 运行。
-footer: Copyright © 2018-present YunYouJun
+  - title: 中二至上
+    details: 今日は……风が騒がしいな…（今日的风儿甚是喧嚣……）
+  - title: 兴趣驱动
+    details: 我只是一个兴趣使然的英雄罢了。
+  - title: 高羞耻度
+    details: 人生在世，别太在意别人的看法，因为你无法取悦所有人。
+footer: Copyright © 2018-2020 YunYouJun
 ---
-
-# 疾风
