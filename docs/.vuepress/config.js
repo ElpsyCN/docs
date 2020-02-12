@@ -46,9 +46,13 @@ module.exports = {
     editLinks: true,
     editLinkText: "来增加更多有趣的东西吧！",
     smoothScroll: true,
-    sidebar: "auto"
+    displayAllHeaders: true,
+    sidebar: {
+      "/": ["guide", "sentence", "word"]
+    }
   },
   plugins: [
+    require("./export-json.js"),
     "@vuepress/back-to-top",
     "@vuepress/medium-zoom",
     [

@@ -23,8 +23,9 @@
   "homepage": "https://say.elpsy.cn",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:dev": "vuepress dev docs --debug",
+    "docs:build": "vuepress build docs",
+    "test": "echo nothing"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.3.0",
