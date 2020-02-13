@@ -6,11 +6,11 @@ sentences:
     tags:
       - computer
   - content: 错的不是我，是世界。
-    author: 鲁鲁修
-    from: 叛逆的鲁鲁修
+    author: 鲁路修·兰佩路基
+    from: Code Geass 反叛的鲁路修
     tags:
       - animation
-  - content: 我们一日日度过的所谓日常,实际上可能是接连不断的奇迹。
+  - content: 我们一日日度过的所谓日常，实际上可能是接连不断的奇迹。
     from: 日常
     tags:
       - animation
