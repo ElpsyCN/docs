@@ -38,6 +38,9 @@ sentences:
     tags:
       - animation
       - comic
+  - content: 人类的赞歌是勇气的赞歌！人类的伟大是勇气的伟大！！
+    author: 威廉·A·齐贝林
+    from: JOJO 的奇妙冒险 幻影之血
 ---
 
 # 句子
