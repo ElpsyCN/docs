@@ -42,6 +42,9 @@ sentences:
     author: 威廉·A·齐贝林
     from: JOJO 的奇妙冒险 幻影之血
   - content: 人生就像蒲公英，看似自由，实则身不由己。
+  - content: Never compromise.
+    author: 罗夏
+    from: 守望者
 ---
 
 # 句子
