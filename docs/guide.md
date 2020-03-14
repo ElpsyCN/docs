@@ -10,14 +10,14 @@
 <script>
   fetch(new Request("sentences.json"))
     .then(function(res) {
-      if (!res.ok) {
+      if (res.ok) {
+        res.json().then(function(data) {
+          let i = Math.floor(Math.random() * data.length);
+          document.querySelector("#say").innerHTML = data[i].content;
+        });
+      } else {
         throw new Error("HTTP error, status = " + res.status);
       }
-      res.json().then(function(data) {
-        // 随机获取
-        let i = Math.floor(Math.random() * data.length);
-        document.querySelector("#say").innerHTML = data[i].content;
-      });
     })
     .catch(function(e) {
       console.log("error: " + e.toString());
@@ -30,14 +30,15 @@
 <script>
   fetch(new Request("sentences.json"))
     .then(function(res) {
-      if (!res.ok) {
+      if (res.ok) {
+        // random
+        res.json().then(function(data) {
+          let i = Math.floor(Math.random() * data.length);
+          document.querySelector("#say").innerHTML = data[i].content;
+        });
+      } else {
         throw new Error("HTTP error, status = " + res.status);
       }
-      res.json().then(function(data) {
-        // 随机获取
-        let i = Math.floor(Math.random() * data.length);
-        document.querySelector("#say").innerHTML = data[i].content;
-      });
     })
     .catch(function(e) {
       console.log("error: " + e.toString());

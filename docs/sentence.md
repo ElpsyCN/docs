@@ -41,24 +41,38 @@ sentences:
   - content: 人类的赞歌是勇气的赞歌！人类的伟大是勇气的伟大！！
     author: 威廉·A·齐贝林
     from: JOJO 的奇妙冒险 幻影之血
+    tags:
+      - animation
+      - comic
   - content: 人生就像蒲公英，看似自由，实则身不由己。
+    tags:
+      - philosophy
   - content: Never compromise.
     author: 罗夏
     from: 守望者
+    tags:
+      - comic
+      - film
+  - content: 大师，什么是快乐的秘诀？「不要和愚者争论。」大师，我完全不同意这就是秘诀。「是的，你是对的。」
+    tags:
+      - philosophy
 ---
 
 # 句子
 
+## 格式
+
+## 现存
+
 <template v-for="sentence, key in $frontmatter.sentences">
-  <h2 :id="'s-' + key">
+  <h3 :id="'s-' + key">
     <a :href="'#s-' + key" class="header-anchor">#</a>
     {{ sentence.content }}
-    <Badge v-for="tag, i in sentence.tags" :type="type[i%3]" :text="tag"/>
-  </h2>
-  <blockquote v-if="sentence.author || sentence.from">
-    --
-    <span v-if="sentence.author">{{ sentence.author }}</span>
+  </h3>
+  <blockquote v-if="sentence.author || sentence.from || sentence.tags">
+    <span v-if="sentence.author">-- {{ sentence.author }}</span>
     <span v-if="sentence.from">「{{ sentence.from }}」</span>
+    <Badge v-for="tag, i in sentence.tags" vertical="middle" :type="type[i%3]" :text="tag"/>
   </blockquote>
 </template>
 
