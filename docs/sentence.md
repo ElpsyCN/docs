@@ -62,7 +62,16 @@ sentences:
 
 ## 格式
 
-## 现存
+```yml
+sentences:
+  - content: Hello, World!
+    author: Brian Kernighan
+    from: The C Programming Language
+    tags:
+      - computer
+```
+
+## 列表
 
 <template v-for="sentence, key in $frontmatter.sentences">
   <h3 :id="'s-' + key">

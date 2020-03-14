@@ -1,3 +1,7 @@
+# custom
+sentences.json
+word.json
+
 .DS_Store
 *.log
 dist
