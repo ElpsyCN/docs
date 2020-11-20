@@ -56,6 +56,13 @@ sentences:
   - content: 大师，什么是快乐的秘诀？「不要和愚者争论。」大师，我完全不同意这就是秘诀。「是的，你是对的。」
     tags:
       - philosophy
+  - content: 臣闻善作者，不必善成；善始者，不必善终。
+    from: 史记·乐毅列传
+  - content: Talk is cheap. Show me the code.
+    from: https://lkml.org/lkml/2000/8/25/132
+    author: Linus Torvalds
+    tags:
+      - Linux
 ---
 
 # 句子
