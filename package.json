@@ -25,7 +25,8 @@
   "scripts": {
     "docs:dev": "vuepress dev docs --debug",
     "docs:build": "vuepress build docs",
-    "test": "echo nothing"
+    "test": "echo nothing",
+    "update": "git add -A && git commit -m '📝 add sentence' && git push"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.7.1",

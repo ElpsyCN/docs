@@ -67,7 +67,14 @@ sentences:
     from: 我的青春恋爱物语果然有问题
     author: 比企谷八幡
     tags:
+      - animation
       - young
+  - content: 我不是因为需要你们评论几句才去当英雄的，而是因为我想去当所以我才当的。
+    from: 一拳超人
+    author: 埼玉
+    tags:
+      - animation
+      - comic
 ---
 
 # 句子
