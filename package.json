@@ -23,16 +23,18 @@
   "homepage": "https://say.elpsy.cn",
   "license": "MIT",
   "scripts": {
+    "dev": "yarn docs:dev",
     "docs:dev": "vuepress dev docs --debug",
     "docs:build": "vuepress build docs",
     "test": "echo nothing",
     "update": "git add -A && git commit -m '📝 add sentence' && git push"
   },
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.7.1",
-    "@vuepress/plugin-google-analytics": "^1.7.1",
-    "@vuepress/plugin-medium-zoom": "^1.7.1",
-    "@vuepress/plugin-pwa": "^1.7.1",
-    "vuepress": "^1.7.1"
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2",
+    "@yunyoujun/logger": "^0.1.2",
+    "vuepress": "^1.8.2"
   }
 }

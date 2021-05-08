@@ -8,7 +8,7 @@ module.exports = {
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
       "meta",
-      { name: "apple-mobile-web-app-status-bar-style", content: "#6200ee" }
+      { name: "apple-mobile-web-app-status-bar-style", content: "#6200ee" },
     ],
     ["link", { rel: "apple-touch-icon", href: "/logo.png" }],
     [
@@ -16,17 +16,17 @@ module.exports = {
       {
         rel: "mask-icon",
         href: "/logo.png",
-        color: "#6200ee"
-      }
+        color: "#6200ee",
+      },
     ],
     [
       "meta",
       {
         name: "msapplication-TileImage",
-        content: "/logo.png"
-      }
+        content: "/logo.png",
+      },
     ],
-    ["meta", { name: "msapplication-TileColor", content: "#6200ee" }]
+    ["meta", { name: "msapplication-TileColor", content: "#6200ee" }],
   ],
   themeConfig: {
     logo: "/logo.png",
@@ -34,12 +34,16 @@ module.exports = {
       { text: "指南", link: "/guide/" },
       {
         text: "句子",
-        link: "/sentence/"
+        link: "/sentence/",
       },
       {
         text: "词语",
-        link: "/word/"
-      }
+        link: "/word/",
+      },
+      {
+        text: "Steins Gate",
+        link: "/steins-gate/",
+      },
     ],
     repo: "ElpsyCN/say",
     docsDir: "docs",
@@ -48,8 +52,8 @@ module.exports = {
     smoothScroll: true,
     displayAllHeaders: true,
     sidebar: {
-      "/": ["guide", "sentence", "word"]
-    }
+      "/": ["guide", "sentence", "word"],
+    },
   },
   plugins: [
     require("./export-json.js"),
@@ -58,15 +62,15 @@ module.exports = {
     [
       "@vuepress/google-analytics",
       {
-        ga: "UA-121354150-12"
-      }
+        ga: "UA-121354150-12",
+      },
     ],
     [
       "@vuepress/pwa",
       {
         serviceWorker: true,
-        updatePopup: true
-      }
-    ]
-  ]
+        updatePopup: true,
+      },
+    ],
+  ],
 };

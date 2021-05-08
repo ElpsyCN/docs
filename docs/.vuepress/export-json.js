@@ -1,12 +1,22 @@
 const fs = require("fs");
 const public = "docs/.vuepress/public/";
+
+const { Logger } = require("@yunyoujun/logger");
+const logger = new Logger();
+
+/**
+ * 写成 JSON
+ * @param {string} name
+ * @param {object} data
+ */
 function writeJsonFile(name, data) {
   let json = JSON.stringify(data);
-  fs.writeFile(public + name + ".json", json, err => {
+  fs.writeFile(public + name + ".json", json, (err) => {
     if (err) throw err;
-    console.log("The file(" + name + ".json) has been saved!");
+    logger.success("The file(" + name + ".json) has been saved!");
   });
 }
+
 module.exports = {
   extendPageData($page) {
     const { frontmatter } = $page;
@@ -15,5 +25,5 @@ module.exports = {
     } else if (frontmatter.words) {
       writeJsonFile("sentences", frontmatter.words);
     }
-  }
+  },
 };
